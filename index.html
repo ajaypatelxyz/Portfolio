@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajay Patel — Portfolio</title>
+  <meta name="description" content="Ajay Patel — Web Developer & Problem Solver" />
+  <link rel="preload" href="assets/profile.jpg" as="image" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="" aria-hidden="true" />
+      <span>Ajay Patel</span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" data-nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page page-home">
+    <!-- Hero -->
+    <section class="hero reveal">
+      <div class="hero-text">
+        <p class="eyebrow">Hi, I’m Ajay 👋</p>
+        <h1>Building <span class="accent-underline">fast</span>, interactive web experiences.</h1>
+        <p class="lede">
+          Full‑stack developer focused on clean UI, smooth animations, and reliable DX.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-accent" href="projects.html">View Projects</a>
+          <a class="btn btn-ghost" href="about.html">About Me</a>
+        </div>
+        <ul class="quick-stats">
+          <li><strong>15+</strong><span>Projects</span></li>
+          <li><strong>4</strong><span>Hackathons</span></li>
+          <li><strong>AWS</strong><span>Certified</span></li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <img class="profile" src="assets/profile.jpg" alt="Portrait of Ajay Patel" />
+      </div>
+    </section>
+
+    <!-- Features/Skills -->
+    <section class="features reveal">
+      <article class="feature-card">
+        <h3>Front‑end</h3>
+        <p>React, Next.js, GSAP, Tailwind, accessibility, performance.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Back‑end</h3>
+        <p>Node.js, Express, REST APIs, auth, PostgreSQL/MongoDB.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Tooling</h3>
+        <p>Git/GitHub, CI/CD, Docker basics, testing, cloud on AWS.</p>
+      </article>
+    </section>
+
+    <!-- Highlight Projects -->
+    <section class="grid projects-grid reveal">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="cards">
+        <a class="project-card" href="projects.html#p1">
+          <div class="tag">Web App</div>
+          <h3>CityFlow</h3>
+          <p>Smart city resources & transport dashboard with live maps.</p>
+        </a>
+        <a class="project-card" href="projects.html#p2">
+          <div class="tag">E‑commerce</div>
+          <h3>ShopSphere</h3>
+          <p>Responsive store with cart, payments, and admin analytics.</p>
+        </a>
+        <a class="project-card" href="projects.html#p3">
+          <div class="tag">Travel</div>
+          <h3>Wanderlust</h3>
+          <p>Modular travel site with micro‑frontends and dynamic content.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Ajay Patel • Built with ♥</p>
+    <div class="socials">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="X">X</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
