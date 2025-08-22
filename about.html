@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — Ajay Patel</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <!-- shared header -->
   <header class="site-header">
     <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" /><span>Ajay Patel</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-expanded="false"
+      aria-label="Open menu"><span></span><span></span><span></span></button>
     <nav class="site-nav" data-nav>
       <a href="index.html">Home</a>
       <a class="active" href="about.html">About</a>
@@ -19,6 +22,7 @@
     </nav>
   </header>
 
+  <!-- About Section -->
   <main class="page page-about">
     <section class="intro reveal">
       <h1>About me</h1>
@@ -28,7 +32,7 @@
       </p>
     </section>
 
-    <section class="timeline reveal">
+    <!-- <section class="timeline reveal">
       <h2>Experience</h2>
       <div class="tl">
         <div class="tl-item">
@@ -46,15 +50,56 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="skills reveal">
       <h2>Skills</h2>
       <ul class="chip-list">
-        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Node.js</li>
-        <li>Express</li><li>GSAP</li><li>PostgreSQL</li><li>AWS</li><li>Git/GitHub</li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <span>HTML</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <span>CSS</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript">
+          <span>JavaScript</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+          <span>React</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+          <span>Node.js</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+          <span>Express</span>
+        </li>
+        <li>
+          <img src="/assets/gsap-greensock.svg" alt="GSAP">
+          <span>GSAP</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+            alt="PostgreSQL">
+          <span>PostgreSQL</span>
+        </li>
+        <!-- <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS">
+          <span>AWS</span>
+        </li> -->
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+          <span>Git/GitHub</span>
+        </li>
       </ul>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -62,4 +107,5 @@
   </footer>
   <script src="js/main.js"></script>
 </body>
+
 </html>

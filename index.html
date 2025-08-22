@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ajay Patel — Portfolio</title>
   <meta name="description" content="Ajay Patel — Web Developer & Problem Solver" />
   <link rel="preload" href="assets/profile.jpg" as="image" />
+  <link rel="icon" href="/assets/ap-logo.png">
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <a class="brand" href="index.html">
-      <img src="assets/logo.svg" alt="" aria-hidden="true" />
+      <!-- <img src="assets/ap-logo.png" alt="" aria-hidden="true" /> -->
       <span>Ajay Patel</span>
     </a>
 
@@ -41,15 +44,15 @@
           <a class="btn btn-ghost" href="about.html">About Me</a>
         </div>
         <ul class="quick-stats">
-          <li><strong>15+</strong><span>Projects</span></li>
-          <li><strong>4</strong><span>Hackathons</span></li>
-          <li><strong>AWS</strong><span>Certified</span></li>
+          <li><strong>5+</strong><span>Projects</span></li>
+          <li><strong>3</strong><span>Hackathons</span></li>
+          <!-- <li><strong>AWS</strong><span>Certified</span></li> -->
         </ul>
       </div>
       <div class="hero-art">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
-        <img class="profile" src="assets/profile.jpg" alt="Portrait of Ajay Patel" />
+        <img class="profile" src="assets/ajay.jpg" alt="Portrait of Ajay Patel" />
       </div>
     </section>
 
@@ -65,7 +68,7 @@
       </article>
       <article class="feature-card">
         <h3>Tooling</h3>
-        <p>Git/GitHub, CI/CD, Docker basics, testing, cloud on AWS.</p>
+        <p>Git/GitHub, Docker basics, testing, cloud on AWS.</p>
       </article>
     </section>
 
@@ -102,7 +105,7 @@
       </p>
     </section>
 
-    <section class="timeline reveal">
+    <!-- <section class="timeline reveal">
       <h2>Experience</h2>
       <div class="tl">
         <div class="tl-item">
@@ -120,19 +123,60 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="skills reveal">
       <h2>Skills</h2>
       <ul class="chip-list">
-        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Node.js</li>
-        <li>Express</li><li>GSAP</li><li>PostgreSQL</li><li>AWS</li><li>Git/GitHub</li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <span>HTML</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <span>CSS</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript">
+          <span>JavaScript</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+          <span>React</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+          <span>Node.js</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+          <span>Express</span>
+        </li>
+        <li>
+          <img src="/assets/gsap-greensock.svg" alt="GSAP">
+          <span>GSAP</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+            alt="PostgreSQL">
+          <span>PostgreSQL</span>
+        </li>
+        <!-- <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS">
+          <span>AWS</span>
+        </li> -->
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+          <span>Git/GitHub</span>
+        </li>
       </ul>
     </section>
+
   </main>
 
   <!-- Project Section -->
-   <main class="page page-projects">
+  <main class="page page-projects">
     <section class="reveal">
       <h1>Projects</h1>
       <p>Selected work showcasing interactivity, performance, and clean UX.</p>
@@ -143,7 +187,11 @@
         <div class="tag">Web App</div>
         <h3>CityFlow — Smart City Dashboard</h3>
         <p>Real‑time resource management and transport analytics.</p>
-        <ul class="pill-list"><li>React</li><li>Mapbox</li><li>Node</li></ul>
+        <ul class="pill-list">
+          <li>React</li>
+          <li>Mapbox</li>
+          <li>Node</li>
+        </ul>
         <div class="card-actions">
           <a class="btn btn-ghost" href="#" target="_blank">Live</a>
           <a class="btn btn-accent" href="#" target="_blank">Code</a>
@@ -154,7 +202,11 @@
         <div class="tag">E‑commerce</div>
         <h3>ShopSphere</h3>
         <p>Cart, payments, admin dashboards, and order workflows.</p>
-        <ul class="pill-list"><li>Next.js</li><li>Stripe</li><li>Prisma</li></ul>
+        <ul class="pill-list">
+          <li>Next.js</li>
+          <li>Stripe</li>
+          <li>Prisma</li>
+        </ul>
         <div class="card-actions">
           <a class="btn btn-ghost" href="#" target="_blank">Live</a>
           <a class="btn btn-accent" href="#" target="_blank">Code</a>
@@ -165,7 +217,11 @@
         <div class="tag">Travel</div>
         <h3>Wanderlust</h3>
         <p>Modular travel website — each section isolated & reusable.</p>
-        <ul class="pill-list"><li>Vanilla JS</li><li>SCSS</li><li>GSAP</li></ul>
+        <ul class="pill-list">
+          <li>Vanilla JS</li>
+          <li>SCSS</li>
+          <li>GSAP</li>
+        </ul>
         <div class="card-actions">
           <a class="btn btn-ghost" href="#" target="_blank">Live</a>
           <a class="btn btn-accent" href="#" target="_blank">Code</a>
@@ -175,7 +231,7 @@
   </main>
 
   <!-- Contact Section -->
-   <main class="page page-contact">
+  <main class="page page-contact">
     <section class="reveal">
       <h1>Let’s build something great</h1>
       <p>Have an idea or role? Send a message—I'll reply quickly.</p>
@@ -196,14 +252,31 @@
           <p><strong>Email:</strong> your@email.com</p>
           <p><strong>Location:</strong> Vadodara, IN</p>
         </div>
-        <div class="card">
+        <div class="card social">
           <h3>Social</h3>
-          <ul class="plain">
-            <li><a href="#" target="_blank">GitHub</a></li>
-            <li><a href="#" target="_blank">LinkedIn</a></li>
-            <li><a href="#" target="_blank">Twitter/X</a></li>
+          <ul class="social-list">
+            <li>
+              <a href="#" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                  alt="LinkedIn">
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter/X">
+                <span>Twitter/X</span>
+              </a>
+            </li>
           </ul>
         </div>
+
       </aside>
     </section>
   </main>
@@ -211,12 +284,20 @@
   <footer class="site-footer">
     <p>© <span id="year"></span> Ajay Patel • Built with ♥</p>
     <div class="socials">
-      <a href="#" aria-label="GitHub">GitHub</a>
-      <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      <a href="#" aria-label="X">X</a>
+      <a href="#" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </a>
+      <a href="#" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+      </a>
+      <a href="#" aria-label="X">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X">
+      </a>
     </div>
+
   </footer>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
