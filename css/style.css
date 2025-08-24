@@ -23,6 +23,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -267,7 +268,7 @@ body {
 } */
 
 /* =========================
-   FEATURES / PROJECTS
+   PROJECTS
 ========================= */
 .features {
   display: grid;
@@ -466,6 +467,11 @@ body {
   margin-bottom: 12px;
 }
 
+img, .project-card, .feature-card, .chip-list li {
+  max-width: 100%;
+  height: auto;
+}
+
 .social {
   text-align: center;
   padding: 1.5rem;
@@ -594,3 +600,28 @@ body {
   .contact-grid { grid-template-columns: 1fr; }
   .quick-stats { flex-wrap: wrap; }
 }
+
+/* Responsive fix for features & project cards */
+@media (max-width: 768px) {
+  .features,
+  .cards {
+    grid-template-columns: 1fr; /* stack items */
+  }
+
+  .project-card.big {
+    grid-column: span 1; /* prevent extra width */
+  }
+}
+
+/* Responsive fix for contact section */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  .contact-form,
+  .contact-aside {
+    width: 100%; /* ensure no overflow */
+  }
+}
+
