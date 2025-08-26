@@ -40,11 +40,12 @@
         <label>Message<textarea name="message" rows="5" required></textarea></label>
         <button class="btn btn-accent" type="submit">Send</button>
       </form>
+      <!-- <p class="form-status"></p> -->
 
       <aside class="contact-aside">
         <div class="card">
           <h3>Direct</h3>
-          <p><strong>Email:</strong> your@email.com</p>
+          <p><strong>Email:</strong> ajaypatel1994mzp@email.com</p>
           <p><strong>Location:</strong> Vadodara, IN</p>
         </div>
         <div class="card social">
@@ -93,6 +94,35 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="js/main.js"></script>
+  <!-- <script>
+        let form = document.querySelector(".contact-form");
+        let status = document.querySelector(".form-status");
+
+        form.addEventListener("click", async(e) => {
+          e.preventDefault();
+
+          const formData = new FormData(form);
+          try{
+            const response = await fetch("", {
+              method: "POST",
+              body: "formData",
+              headers: {
+                "Accept": "application/json"
+              }
+            });
+
+            if(response.ok){
+              status.textContent = "Your Form has been submitted";
+              form.reset();
+            }else{
+              status.textContent = "Sorry there is something problem, please try again";
+            }
+          }catch(error){
+            status.textContent = "Network error, Please try again";
+          }
+
+        })
+      </script> -->
 </body>
 
 </html>
