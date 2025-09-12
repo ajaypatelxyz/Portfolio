@@ -51,6 +51,11 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    // Honeypot check
+    const hp = form.querySelector('input[name="website"]');
+    if (hp && hp.value) {
+      return; // likely a bot
+    }
     statusEl.textContent = '';
     if (submitButton) {
       submitButton.disabled = true;

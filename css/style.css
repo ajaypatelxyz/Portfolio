@@ -628,3 +628,63 @@ img, .project-card, .feature-card, .chip-list li {
   }
 }
 
+/* Card container style */
+.card.social {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--surface-2);  /* Dark background */
+    text-align: center;
+}
+
+.card.social h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Social buttons container */
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Individual button style */
+.social-list li {
+    flex: 1 1 30%;  /* Take equal space and allow wrapping */
+    list-style: none;
+}
+
+.social-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #334155;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.social-list img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 650px) {
+    .social-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-list li {
+        flex: 1 1 100%;  /* Full width buttons */
+    }
+}
