@@ -79,3 +79,23 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
     }
   });
 })();
+
+
+//This is for particles animation effects
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 90, "density": { "enable": true, "value_area": 800 } },
+    "color": { "value": "#00bfff" },
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.5 },
+    "size": { "value": 3 },
+    "line_linked": { "enable": true, "distance": 150, "color": "#00bfff", "opacity": 0.4, "width": 1 },
+    "move": { "enable": true, "speed": 3 }
+  },
+  "interactivity": {
+    "events": { "onhover": { "enable": true, "mode": "repulse" } },
+    "modes": { "repulse": { "distance": 100, "duration": 0.4 } }
+  },
+  "retina_detect": true
+});
