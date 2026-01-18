@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Ajay Patel</title>
+  <meta name="description"
+    content="Get in touch with Ajay Patel - Full-Stack Developer. Let's discuss your next project!" />
   <link rel="icon" href="assets/Ajay-bg.png">
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <!-- Access this particles file -->
   <div id="particles-js"></div>
 
   <header class="site-header">
     <a class="brand" href="index.html"><span>Ajay Patel</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-expanded="false"
+      aria-label="Open menu"><span></span><span></span><span></span></button>
     <nav class="site-nav" data-nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -23,54 +28,203 @@
   </header>
 
   <main class="page page-contact">
-    <section class="reveal">
-      <h1>Let’s build something great</h1>
-      <p>Have an idea or role? Send a message—I'll reply quickly.</p>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero reveal">
+      <span class="contact-label">Get In Touch</span>
+      <h1 class="contact-title">Let's Build Something <span class="gradient-text">Amazing</span></h1>
+      <p class="contact-subtitle">
+        Have a project in mind or just want to say hello? I'd love to hear from you.
+        Fill out the form below or reach out through any of my social channels.
+      </p>
     </section>
 
-    <section class="contact-grid reveal">
-      <form class="contact-form" action="https://formspree.io/f/mqadkylg" method="POST">  <!-- enctype="text/plain" -->
-        <label>Name<input name="name" required /></label>
-        <label>Email<input type="email" name="email" required /></label>
-        <label>Subject<input name="subject" /></label>
-        <label>Message<textarea name="message" rows="5" required></textarea></label>
-        <button class="btn btn-accent" type="submit">Send</button>
-      </form>
-
-      <aside class="contact-aside">
-        <div class="card">
-          <h3>Direct</h3>
-          <p><strong>Email:</strong> ajaypatel1994mzp@gmail.com</p>
-          <p><strong>Location:</strong> Vadodara, IN</p>
+    <!-- Contact Info Cards -->
+    <section class="contact-info-cards reveal">
+      <div class="info-card">
+        <div class="info-icon email-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
         </div>
-        <div class="card social">
-          <h3>Social</h3>
-          <ul class="social-list">
-            <li>
-              <a href="https://github.com/ajaypatelxyz" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-                <span>GitHub</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ajaypatel0" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                  alt="LinkedIn">
-                <span>LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://leetcode.com/u/ajay_patel1994/" target="_blank">
-                <img src="https://nil1729.github.io/LEETCODE-001/images/logo.png" alt="Leetcode">
-                <span>Leetcode</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <h3>Email Me</h3>
+        <p>ajaypatel1994mzp@gmail.com</p>
+        <a href="mailto:ajaypatel1994mzp@gmail.com" class="info-link">Send an email →</a>
+      </div>
 
-      </aside>
+      <div class="info-card">
+        <div class="info-icon location-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </div>
+        <h3>Location</h3>
+        <p>Vadodara, Gujarat, India</p>
+        <!-- <span class="info-badge">🌏 Open to Remote</span> -->
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon availability-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <h3>Availability</h3>
+        <p>Mon - Sat, 9AM - 8PM IST</p>
+        <span class="info-badge available">✅ Currently Available</span>
+      </div>
     </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-main reveal">
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <div class="form-header">
+          <h2>Send a Message</h2>
+          <p>I typically respond within 24 hours</p>
+        </div>
+        <form class="contact-form-pro" action="https://formspree.io/f/mqadkylg" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject"
+              placeholder="Project Inquiry / Job Opportunity / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or just say hi..."
+              required></textarea>
+          </div>
+          <button class="btn btn-accent btn-submit" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Connect Section -->
+      <div class="connect-wrapper">
+        <div class="connect-card">
+          <h3>Connect With Me</h3>
+          <p>Follow me on social media or check out my work on these platforms.</p>
+
+          <div class="social-links-pro">
+            <a href="https://github.com/ajaypatelxyz" target="_blank" class="social-link-card">
+              <div class="social-icon github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </div>
+              <div class="social-info">
+                <span class="social-name">GitHub</span>
+                <span class="social-handle">@ajaypatelxyz</span>
+              </div>
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ajaypatel0" target="_blank" class="social-link-card">
+              <div class="social-icon linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </div>
+              <div class="social-info">
+                <span class="social-name">LinkedIn</span>
+                <span class="social-handle">Ajay Patel</span>
+              </div>
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="https://leetcode.com/u/ajay_patel1994/" target="_blank" class="social-link-card">
+              <div class="social-icon leetcode">
+                <img src="https://nil1729.github.io/LEETCODE-001/images/logo.png" alt="LeetCode" />
+              </div>
+              <div class="social-info">
+                <span class="social-name">LeetCode</span>
+                <span class="social-handle">@ajay_patel1994</span>
+              </div>
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+          <h3>Quick Actions</h3>
+          <a class="btn btn-resume" href="assets/Ajay_Patel_Resume.pdf" download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download Resume
+          </a>
+          <a class="btn btn-ghost" href="projects.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            View Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+      <div class="modal-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </div>
+      <h2>Thank You! 🎉</h2>
+      <p>Your message has been sent successfully.</p>
+      <p class="modal-subtext">I'll get back to you within 24 hours.</p>
+      <button class="btn btn-accent modal-close" onclick="closeModal()">
+        Got it!
+      </button>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <p>© <span id="year"></span> Ajay Patel • Built with ♥</p>
@@ -86,11 +240,78 @@
       </a>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
   <!-- Particles JS Script -->
   <script src="assets/particles.min.js"></script>
 
   <!-- Your Main Script -->
   <script src="js/main.js"></script>
+
+  <!-- Form Submission Script -->
+  <script>
+    // Handle form submission with AJAX
+    const contactForm = document.querySelector('.contact-form-pro');
+    const submitBtn = contactForm.querySelector('.btn-submit');
+    const originalBtnText = submitBtn.innerHTML;
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Show loading state
+      submitBtn.innerHTML = `
+        <svg class="spinner" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+        </svg>
+        Sending...
+      `;
+      submitBtn.disabled = true;
+
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          // Show success modal
+          document.getElementById('successModal').classList.add('active');
+          // Reset form
+          contactForm.reset();
+        } else {
+          alert('Oops! Something went wrong. Please try again.');
+        }
+      } catch (error) {
+        alert('Oops! Something went wrong. Please try again.');
+      }
+
+      // Reset button
+      submitBtn.innerHTML = originalBtnText;
+      submitBtn.disabled = false;
+    });
+
+    // Close modal function
+    function closeModal() {
+      document.getElementById('successModal').classList.remove('active');
+    }
+
+    // Close modal on overlay click
+    document.getElementById('successModal').addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal-overlay')) {
+        closeModal();
+      }
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
 </body>
+
 </html>

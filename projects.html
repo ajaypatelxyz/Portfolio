@@ -5,6 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects — Ajay Patel</title>
+  <meta name="description"
+    content="Explore Ajay Patel's portfolio of web development projects - Full-Stack applications built with React, Node.js, and more." />
   <link rel="icon" href="/assets/Ajay-bg.png">
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -15,7 +17,6 @@
 
   <header class="site-header">
     <a class="brand" href="index.html">
-      <!-- <img src="assets/logo.svg" alt="" /> -->
       <span>Ajay Patel</span>
     </a>
     <button class="nav-toggle" aria-expanded="false"
@@ -29,67 +30,331 @@
   </header>
 
   <main class="page page-projects">
-    <section class="reveal">
-      <h1>Projects</h1>
-      <p>Selected work showcasing interactivity, performance, and clean UX.</p>
+
+    <!-- Projects Hero Section -->
+    <section class="projects-hero reveal">
+      <span class="projects-label">My Work</span>
+      <h1 class="projects-title">Featured <span class="gradient-text">Projects</span></h1>
+      <p class="projects-subtitle">
+        A showcase of my best work — from full-stack web applications to interactive dashboards.
+        Each project reflects my passion for clean code, intuitive UX, and solving real-world problems.
+      </p>
     </section>
 
-    <section class="cards reveal">
-      <article id="p1" class="project-card big">
-        <div class="tag">Web App</div>
-        <h3>CityFlow — Smart City Dashboard</h3>
-        <p>Real‑time resource management and transport analytics.</p>
-        <ul class="pill-list">
-          <li>React</li>
-          <li>Mapbox</li>
-          <li>Node</li>
-        </ul>
-        <div class="card-actions">
-          <a class="btn btn-ghost" href="#" target="_blank">Live</a>
-          <a class="btn btn-accent" href="#" target="_blank">Code</a>
+    <!-- Projects Stats -->
+    <section class="projects-stats reveal">
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
         </div>
-      </article>
-
-      <article id="p2" class="project-card">
-        <div class="tag">E‑commerce</div>
-        <h3>ShopSphere</h3>
-        <p>Cart, payments, admin dashboards, and order workflows.</p>
-        <ul class="pill-list">
-          <li>Next.js</li>
-          <li>Stripe</li>
-          <li>Prisma</li>
-        </ul>
-        <div class="card-actions">
-          <a class="btn btn-ghost" href="#" target="_blank">Live</a>
-          <a class="btn btn-accent" href="#" target="_blank">Code</a>
+        <span class="stat-text">Production Ready</span>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
         </div>
-      </article>
-
-      <article id="p3" class="project-card">
-        <div class="tag">Travel</div>
-        <h3>Wanderlust</h3>
-        <p>Modular travel website — each section isolated & reusable.</p>
-        <ul class="pill-list">
-          <li>Vanilla JS</li>
-          <li>SCSS</li>
-          <li>GSAP</li>
-        </ul>
-        <div class="card-actions">
-          <a class="btn btn-ghost" href="#" target="_blank">Live</a>
-          <a class="btn btn-accent" href="#" target="_blank">Code</a>
+        <span class="stat-text">Fully Responsive</span>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+            </polygon>
+          </svg>
         </div>
-      </article>
+        <span class="stat-text">Best Practices</span>
+      </div>
     </section>
+
+    <!-- Featured Project - Student Stay -->
+    <section class="featured-project reveal">
+      <div class="featured-badge">🚀 Currently Building</div>
+      <div class="featured-content">
+        <div class="featured-info">
+          <div class="project-tag">Full-Stack Web App</div>
+          <h2 class="featured-title">Student Stay — Room Finder Platform</h2>
+          <p class="featured-description">
+            A comprehensive platform connecting students and bachelors with landlords for finding the perfect
+            accommodation.
+            Features property listings, booking system, visit scheduling, and nearby places integration to make
+            room hunting easier and more efficient.
+          </p>
+          <div class="featured-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🏠</span>
+              <span>PG, Flats & Hostel listings</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📅</span>
+              <span>Visit scheduling & booking system</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📍</span>
+              <span>Nearby places (Metro, Hospital, Mall)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">👥</span>
+              <span>Users & Landlord dashboards</span>
+            </div>
+          </div>
+          <ul class="tech-stack">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>REST API</li>
+          </ul>
+          <div class="featured-actions">
+            <button class="btn btn-accent" onclick="showComingSoon()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Live Demo
+            </button>
+            <button class="btn btn-ghost" onclick="showComingSoon()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              View Code
+            </button>
+          </div>
+        </div>
+        <div class="featured-visual">
+          <div class="project-mockup">
+            <div class="mockup-header">
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-sidebar"></div>
+              <div class="mockup-main">
+                <div class="mockup-chart"></div>
+                <div class="mockup-map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Projects Grid -->
+    <section class="projects-section reveal">
+      <h2 class="section-heading">More Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 2: PatelStore -->
+        <article class="project-card-pro">
+          <div class="card-header">
+            <div class="project-tag">E-Commerce</div>
+            <div class="card-links">
+              <a href="https://patelstore-bice.vercel.app/" target="_blank" class="card-link" aria-label="View Live">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="https://github.com/ajaypatelxyz/ecommerce-website" target="_blank" class="card-link"
+                aria-label="View Code">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">PatelStore</h3>
+          <p class="card-description">
+            A fully functional e-commerce website with modern UI design. Features include product catalog,
+            shopping cart, responsive design, and a clean user experience for online shopping.
+          </p>
+          <ul class="tech-stack">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <!-- Project 3: Weather Check -->
+        <article class="project-card-pro">
+          <div class="card-header">
+            <div class="project-tag">Utility</div>
+            <div class="card-links">
+              <a href="https://weathercheck-three.vercel.app/" target="_blank" class="card-link" aria-label="View Live">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="https://github.com/ajaypatelxyz/Weather-check" target="_blank" class="card-link"
+                aria-label="View Code">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Weather Check</h3>
+          <p class="card-description">
+            A weather application that provides real-time weather information for any location. Features include
+            current conditions, temperature, humidity, and a clean user interface.
+          </p>
+          <ul class="tech-stack">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <!-- Project 4: Lost and Found System -->
+        <article class="project-card-pro">
+          <div class="card-header">
+            <div class="project-tag">Full-Stack</div>
+            <div class="card-links">
+              <a href="#" class="card-link" aria-label="View Live">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="#" class="card-link" aria-label="View Code">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Lost and Found System</h3>
+          <p class="card-description">
+            A platform to report and find lost items. Users can post lost/found items, search by category or location,
+            and connect with item owners to recover belongings.
+          </p>
+          <ul class="tech-stack">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="projects-cta reveal">
+      <h2>Interested in working together?</h2>
+      <p>I'm always open to discussing new projects and creative ideas.</p>
+      <div class="cta-buttons">
+        <a class="btn btn-accent" href="contact.html">Get In Touch</a>
+        <a class="btn btn-resume" href="assets/Ajay_Patel_Resume.pdf" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download Resume
+        </a>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Ajay Patel</p>
+    <p>© <span id="year"></span> Ajay Patel • Built with ♥</p>
+    <div class="socials">
+      <a href="https://github.com/ajaypatelxyz" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/ajaypatel0" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+      </a>
+      <a href="https://leetcode.com/u/ajay_patel1994/" aria-label="Leetcode">
+        <img src="https://nil1729.github.io/LEETCODE-001/images/logo.png" alt="LeetCode">
+      </a>
+    </div>
   </footer>
+
+  <!-- Coming Soon Modal -->
+  <div class="modal-overlay" id="comingSoonModal">
+    <div class="modal-content">
+      <div class="modal-icon coming-soon-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+      </div>
+      <h2>Coming Soon! 🚀</h2>
+      <p>This project is currently under development.</p>
+      <p class="modal-subtext">Stay tuned for the launch!</p>
+      <button class="btn btn-accent modal-close" onclick="closeComingSoon()">
+        Got it!
+      </button>
+    </div>
+  </div>
+
   <!-- Particles JS Script -->
   <script src="assets/particles.min.js"></script>
 
   <!-- Your Main Script -->
   <script src="js/main.js"></script>
+
+  <!-- Coming Soon Modal Script -->
+  <script>
+    function showComingSoon() {
+      document.getElementById('comingSoonModal').classList.add('active');
+    }
+
+    function closeComingSoon() {
+      document.getElementById('comingSoonModal').classList.remove('active');
+    }
+
+    // Close modal on overlay click
+    document.getElementById('comingSoonModal').addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal-overlay')) {
+        closeComingSoon();
+      }
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeComingSoon();
+      }
+    });
+  </script>
 </body>
 
 </html>

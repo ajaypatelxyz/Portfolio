@@ -5,6 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — Ajay Patel</title>
+  <meta name="description"
+    content="Learn more about Ajay Patel - Full-Stack Developer & Problem Solver from Vadodara, India" />
   <link rel="icon" href="/assets/Ajay-bg.png">
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -16,7 +18,6 @@
   <!-- shared header -->
   <header class="site-header">
     <a class="brand" href="index.html">
-      <!-- <img src="assets/logo.svg" alt="" /> -->
       <span>Ajay Patel</span>
     </a>
     <button class="nav-toggle" aria-expanded="false"
@@ -31,36 +32,123 @@
 
   <!-- About Section -->
   <main class="page page-about">
-    <section class="intro reveal">
-      <h1>About me</h1>
-      <p>
-        I’m a developer who loves turning ideas into smooth, interactive interfaces.
-        I focus on performance, accessibility, and developer experience.
-      </p>
-    </section>
 
-    <!-- <section class="timeline reveal">
-      <h2>Experience</h2>
-      <div class="tl">
-        <div class="tl-item">
-          <span class="tl-dot"></span>
-          <div class="tl-content">
-            <h3>HOD (CSE), Parul University — Mentor</h3>
-            <p>Guided teams on web systems, networking labs, and hackathon workflows.</p>
+    <!-- About Hero Section -->
+    <section class="about-hero reveal">
+      <div class="about-hero-content">
+        <div class="about-text">
+          <span class="about-label">About Me</span>
+          <h1 class="about-title">I'm <span class="gradient-text">Ajay Patel</span></h1>
+          <h2 class="about-subtitle">Full-Stack Developer & Problem Solver</h2>
+          <p class="about-description">
+            A passionate developer from <strong>Vadodara, India</strong> who loves transforming complex ideas
+            into elegant, user-friendly web applications. With expertise in both front-end and back-end
+            technologies, I build seamless digital experiences that make a difference.
+          </p>
+          <p class="about-description">
+            I specialize in <strong>React</strong>, <strong>Node.js</strong>, and modern JavaScript frameworks.
+            When I'm not coding, you'll find me solving problems on LeetCode, participating in hackathons,
+            or exploring the latest tech trends.
+          </p>
+          <div class="about-cta">
+            <a class="btn btn-resume" href="assets/Ajay_Patel_Resume.pdf" download>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download Resume
+            </a>
+            <a class="btn btn-ghost" href="contact.html">Let's Connect</a>
           </div>
         </div>
-        <div class="tl-item">
-          <span class="tl-dot"></span>
-          <div class="tl-content">
-            <h3>AWS & Web Dev Certificates</h3>
-            <p>Built cloud‑ready apps, CI/CD pipelines, and containerized services.</p>
+        <div class="about-image-wrapper">
+          <div class="about-image-glow"></div>
+          <img src="assets/ajay-profile.png" alt="Ajay Patel" class="about-image" />
+          <div class="about-image-badge">
+            <span class="badge-icon">💻</span>
+            <span class="badge-text">Available for Work</span>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
+    <!-- What I Do Section -->
+    <section class="what-i-do reveal">
+      <h2 class="section-heading">What I Do</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon frontend-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>Front-End Development</h3>
+          <p>Building responsive, interactive UIs with React, and modern CSS. I create pixel-perfect designs
+            that work flawlessly across all devices.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon backend-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+          </div>
+          <h3>Back-End Development</h3>
+          <p>Designing robust APIs and server architectures with Node.js, Express, and databases like MongoDB.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon fullstack-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h3>Full-Stack Solutions</h3>
+          <p>End-to-end web application development from database design to deployment. I handle the complete
+            development lifecycle.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="about-stats reveal">
+      <div class="stat-card">
+        <span class="stat-number">5+</span>
+        <span class="stat-label">Projects Completed</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Hackathons</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">∞</span>
+        <span class="stat-label">Learning Spirit</span>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
     <section class="skills reveal">
-      <h2>Skills</h2>
+      <h2 class="section-heading">My Tech Stack</h2>
       <ul class="chip-list">
         <li>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
@@ -92,11 +180,6 @@
           <span>GSAP</span>
         </li>
         <li>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-            alt="PostgreSQL">
-          <span>PostgreSQL</span>
-        </li>
-        <li>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
           <span>C</span>
         </li>
@@ -112,10 +195,6 @@
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
           <span>Python</span>
         </li>
-        <!-- <li>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS">
-          <span>AWS</span>
-        </li> -->
         <li>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
           <span>Git/GitHub</span>
@@ -126,8 +205,20 @@
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Ajay Patel</p>
+    <p>© <span id="year"></span> Ajay Patel • Built with ♥</p>
+    <div class="socials">
+      <a href="https://github.com/ajaypatelxyz" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/ajaypatel0" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+      </a>
+      <a href="https://leetcode.com/u/ajay_patel1994/" aria-label="Leetcode">
+        <img src="https://nil1729.github.io/LEETCODE-001/images/logo.png" alt="LeetCode">
+      </a>
+    </div>
   </footer>
+
   <!-- Particles JS Script -->
   <script src="assets/particles.min.js"></script>
 
